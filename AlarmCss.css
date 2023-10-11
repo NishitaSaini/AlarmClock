@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: skyblue;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+#wrapper{
+	background-color: white;
+/*	height: 200px;*/
+	width: 400px;
+	border-radius: 10px;
+	padding: 10px;
+}
+#timer-display{
+	font-size: 30px;
+	font-family: "Roboto Mono", monospace;
+	text-align: center;
+}
+#inputs{
+	display: flex;
+	justify-content: center;
+	grid-gap: 1rem;
+	margin-top: 20px;
+}
+#inputs select{
+	padding: 2px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+#setBtn{
+	
+	/*padding: 10px;
+	width: 100px;
+	color: white;border: none;
+	background-color: blue;
+	border-radius: 30px;*/
+/*	display: block;*/
+	margin: 20px auto 0 auto; 
+}
+#stopAlarm, #setBtn, .btn-delete, #stopAlarm{
+    padding: 8px;
+    color: #fff;
+    background: #2E94E3;
+    border: 1px solid #2E94E3;
+    border-radius: 18px;
+    margin-left: 80px;
+}
+#stopAlarm{
+    visibility: hidden;
+/*  width: 100px;*/
+    color: #fff;
+}
+
+.btn-delete{
+    margin-left: 50px;
+}
+
+#setBtn:hover, .btn-delete:hover, #stopAlarm:hover{
+    cursor: pointer;
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+}
+
+h3{
+    color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.alarmList{
+    color: #fff;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alarmLog{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+    font-family: "Roboto monospace", monospace;
+}
